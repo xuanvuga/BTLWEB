@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Grades</title>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Grades</h2>
+      <button onclick="backToHomePage()">Back</button>
+      <button onclick="signOut()">Sign Out</button>
+    </header>
+
+    <!-- Semester Selection -->
+    <label for="semester">Select Semester:</label>
+    <select
+      id="semester"
+      onchange="displayGrades()">
+      <option value="semester1">Semester 1 2024</option>
+      <option value="semester2">Semester 2 2024</option>
+      <option value="semester3">Semester 3 2024</option>
+    </select>
+
+    <!-- Grades Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Subject Group Code</th>
+          <th>Subject Code</th>
+          <th>Full Subject Name</th>
+          <th>GPA</th>
+        </tr>
+      </thead>
+      <tbody id="gradesTable">
+        <!-- Grades will be populated here -->
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
